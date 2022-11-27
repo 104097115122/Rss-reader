@@ -19,7 +19,7 @@
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        <Button Grid.Column="0" Grid.Row="1" Width="100" Height="30" Margin="10,10,10,106" Content="Search" Click="Search"/>
+        <Button Grid.Column="0" Grid.Row="1" Width="100" Height="30" Margin="10,10,10,106" Content="Search"/>
         <TextBox Name="Link" Text="Enter link here!" Grid.Column="1" Grid.Row="0" VerticalAlignment="Center" HorizontalAlignment="Left" HorizontalContentAlignment="Left" MinWidth="350" TextWrapping="Wrap" AcceptsReturn="True"/>
         <ListBox Name="LinkList" Grid.Row="1" Grid.Column="1">
         </ListBox>

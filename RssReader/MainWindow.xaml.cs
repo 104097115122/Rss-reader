@@ -66,16 +66,6 @@ namespace RssReader
             //    throw;
             //}
         }
-
-        private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-
-        }
-
-        private void Search(object sender, RoutedEventArgs e)
-        {
-        }
-
         private void SaveLinkToFile(object sender, RoutedEventArgs e)
         {
             if (!File.Exists(@"D:\ProjektWPF\Rss-reader\lista.txt"))
@@ -87,7 +77,7 @@ namespace RssReader
             }
             else 
             {
-                File.AppendAllText(@"D:\ProjektWPF\Rss-reader\lista.txt", "\n"+Link.Text);
+                File.AppendAllLines(@"D:\ProjektWPF\Rss-reader\lista.txt", $"{Link.Text}");
             }
 
             ReadFromFile();
