@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "qJP9kIaQAWDipqlWsBPyTPxj6PrYOw5qbnp9aKvV55DNbE3esoSn1B29aZ4QpGHG5cjBnFWBXek+eqEqTlD2BQ==",
+  "success": true,
+  "projectFilePath": "E:\\work\\RssReader\\RssReader\\RssReader.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\igora\\.nuget\\packages\\system.servicemodel.syndication\\7.0.0\\system.servicemodel.syndication.7.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
