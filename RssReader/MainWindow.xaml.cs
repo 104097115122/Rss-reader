@@ -16,6 +16,7 @@ using System.ServiceModel.Syndication;
 using System.Xml;
 using System.Diagnostics;
 using System.IO;
+using System.Collections.ObjectModel;
 
 namespace RssReader
 {
@@ -27,22 +28,7 @@ namespace RssReader
         public MainWindow()
         {
             InitializeComponent();
-            //pobranie wartosci z pliku z zapisanymi linkami
-            try
-            {
-                using (StreamReader sr = new StreamReader(@"D:\ProjektWPF\Rss-reader\lista.txt")) 
-                {
-                    string line;
-                    while ((line = sr.ReadLine()) != null) 
-                    {
-                        LinkList.Items.Add(line);
-                    }
-                }
-            }
-            catch (Exception)
-            {
-                MessageBox.Show("Could not find the file!");
-            }
+            ReadFromFile();
         }
 
         private void AddLink_Click(object sender, RoutedEventArgs e)
@@ -88,14 +74,44 @@ namespace RssReader
 
         private void Search(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show(Link.Text);
         }
 
         private void SaveLinkToFile(object sender, RoutedEventArgs e)
         {
-            using (StreamWriter sw = new StreamWriter(@"D:\ProjektWPF\Rss-reader\lista.txt")) 
+            if (!File.Exists(@"D:\ProjektWPF\Rss-reader\lista.txt"))
             {
-                sw.WriteLine(Link.Text); 
+                using (StreamWriter sw = new StreamWriter(@"D:\ProjektWPF\Rss-reader\lista.txt")) 
+                {
+                    sw.WriteLine(Link.Text);
+                }
+            }
+            else 
+            {
+                File.AppendAllText(@"D:\ProjektWPF\Rss-reader\lista.txt", "\n"+Link.Text);
+            }
+
+            ReadFromFile();
+        }
+
+        private void ReadFromFile() 
+        {
+            ObservableCollection<string> links = new ObservableCollection<string>();
+            //pobranie wartosci z pliku z zapisanymi linkami
+            try
+            {
+                using (StreamReader sr = new StreamReader(@"D:\ProjektWPF\Rss-reader\lista.txt"))
+                {
+                    string line;
+                    LinkList.ItemsSource = links;
+                    while ((line = sr.ReadLine()) != null)
+                    {
+                        links.Add(line);
+                    }
+                }
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Could not find the file!");
             }
         }
     }
