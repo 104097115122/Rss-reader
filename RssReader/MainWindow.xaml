@@ -5,7 +5,19 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:RssReader"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="595">
+        Title="MainWindow" Height="700" Width="1200">
+    <Window.Background>
+        <ImageBrush ImageSource="/backgroundImage3.jpg">
+            <ImageBrush.RelativeTransform>
+                <TransformGroup>
+                    <ScaleTransform CenterY="0.5" CenterX="0.5"/>
+                    <SkewTransform CenterX="0.5" CenterY="0.5"/>
+                    <RotateTransform Angle="0" CenterX="0.5" CenterY="0.5"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </ImageBrush.RelativeTransform>
+        </ImageBrush>
+    </Window.Background>
     <Grid Height="440" VerticalAlignment="Center" HorizontalAlignment="Center" Width="590">
 
         <Grid.ColumnDefinitions>
@@ -24,6 +36,6 @@
         <ListBox Name="LinkList" Grid.Row="1" Grid.Column="1" SelectionChanged="LinkList_SelectionChanged">
         </ListBox>
         <Button Grid.Column="2" Grid.Row="1" Width="100" Height="30" Content="Save" Click="SaveLinkToFile"/>
-        <TextBox Name="Content" Grid.Column="1" HorizontalAlignment="Center" Grid.Row="2" TextWrapping="Wrap" Text="TextBox" TextAlignment="Center" VerticalAlignment="Center" Width="350" Height="103"/>
+        <TextBox IsReadOnly="True" Name="Content" Grid.Column="1"  HorizontalAlignment="Center" Grid.Row="2" TextWrapping="Wrap" TextAlignment="Center" VerticalAlignment="Center" Width="350" Height="103"/>
     </Grid>
 </Window>

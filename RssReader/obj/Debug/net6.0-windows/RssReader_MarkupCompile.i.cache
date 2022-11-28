@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-E:\reps\RssReader\obj\Debug\net6.0-windows\
+D:\ProjektWPF\Rss-reader\RssReader\obj\Debug\net6.0-windows\
 RssReader
 none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
-E:\reps\RssReader\App.xaml
+D:\ProjektWPF\Rss-reader\RssReader\App.xaml
 11407045341
 
 5-1464617370
-195-1667748601
+195-66758830
 MainWindow.xaml;
 
 True
