@@ -97,7 +97,7 @@ namespace RssReader
                 {
                     //Take selected link from list of links as link
                     dynamic link = LinkList.SelectedItem as dynamic;
-                    //string linkToWebsite = link;
+                    
 
                     WriteTitle(link);
                     
