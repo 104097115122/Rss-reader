@@ -77,7 +77,7 @@ namespace RssReader
             }
             else 
             {
-                File.AppendAllLines(@"D:\ProjektWPF\Rss-reader\lista.txt", $"{Link.Text}");
+                File.AppendAllText(@"D:\ProjektWPF\Rss-reader\lista.txt", $"\n{Link.Text}");
             }
 
             ReadFromFile();
