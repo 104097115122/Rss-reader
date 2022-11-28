@@ -55,25 +55,25 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\sgugn\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\igora\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\ProjektWPF\\Rss-reader\\RssReader\\RssReader.csproj",
+      "projectUniqueName": "E:\\reps\\RssReader\\RssReader.csproj",
       "projectName": "RssReader",
-      "projectPath": "D:\\ProjektWPF\\Rss-reader\\RssReader\\RssReader.csproj",
-      "packagesPath": "C:\\Users\\sgugn\\.nuget\\packages\\",
-      "outputPath": "D:\\ProjektWPF\\Rss-reader\\RssReader\\obj\\",
+      "projectPath": "E:\\reps\\RssReader\\RssReader.csproj",
+      "packagesPath": "C:\\Users\\igora\\.nuget\\packages\\",
+      "outputPath": "E:\\reps\\RssReader\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\sgugn\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\igora\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net6.0-windows"
@@ -122,7 +122,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
       }
     }
   }
