@@ -11,6 +11,7 @@
     <None Remove="backgroundImage.jpg" />
     <None Remove="backgroundImage2.jpg" />
     <None Remove="backgroundImage3.jpg" />
+    <None Remove="wifi.jpg" />
   </ItemGroup>
 
   <ItemGroup>
@@ -18,9 +19,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="backgroundImage.jpg" />
-    <Resource Include="backgroundImage2.jpg" />
     <Resource Include="backgroundImage3.jpg" />
+    <Resource Include="wifi.jpg" />
   </ItemGroup>
 
 </Project>
