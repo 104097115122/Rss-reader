@@ -5,13 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:RssReader"
         mc:Ignorable="d"
-        Title="MainWindow" Width="600" Height="460">
-    <Grid Height="440" Width="590">
+        Title="MainWindow" Width="700" Height="460">
+    <Grid Height="440" Width="690">
 
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="70"></ColumnDefinition>
-            <ColumnDefinition></ColumnDefinition>
-            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition Width="100"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
             <ColumnDefinition Width="100"></ColumnDefinition>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
@@ -26,7 +26,14 @@
         <Image Grid.Column="3" Grid.Row="0" Source="/wifi.jpg"></Image>
         <TextBox x:Name="linkTextBox" Text="Enter a link!" FontWeight="ExtraLight" GotFocus="ClearPlaceholder" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,10,0,0" Width="410" FontStyle="Italic"></TextBox>
 
-        <Button Content="Save link!" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" Height="20" Width="100" Margin="300,50,0,0" Click="ButtonClicked"></Button>
-        <ListBox Grid.Column="1" Grid.Row="2" Grid.RowSpan="2" Grid.ColumnSpan="2" x:Name="linkList"></ListBox>
+        <Button Content="Save a link!" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" Height="20" Width="100" Margin="310,50,0,0" Click="ButtonClicked"></Button>
+        <Button Content="Reset filters" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" Height="20" Width="100" Margin="70,50,0,0" Click="ResetFilters"></Button>
+        <ListBox Grid.Column="1" Grid.Row="2" Grid.RowSpan="2" Width="410" Grid.ColumnSpan="2" x:Name="linkList"></ListBox>
+        <CheckBox Grid.Row="2" Grid.RowSpan="2" Height="20" Width="80" Margin="10,0,0,150" Content="Świat" x:Name="worldCheckbox" Checked="AddFilterWorld"></CheckBox>
+        <CheckBox Grid.Row="2" Grid.RowSpan="2" Height="20" Width="80" Margin="10,0,0,110" Content="Jedzenie" x:Name="foodCheckbox" Checked="AddFilterFood"></CheckBox>
+        <CheckBox Grid.Row="2" Grid.RowSpan="2" Height="20" Width="80" Margin="10,0,0,70" Content="Sport" x:Name="sportCheckbox" Checked="AddFilterSport"></CheckBox>
+        <CheckBox Grid.Row="2" Grid.RowSpan="2" Height="20" Width="80" Margin="10,0,0,30" Content="Pogoda" x:Name="weatherCheckbox" Checked="AddFilterWeather"></CheckBox>
+        <CheckBox Grid.Row="2" Grid.RowSpan="2" Height="20" Width="80" Margin="10,10,0,0" Content="Muzyka" x:Name="musicCheckbox" Checked="AddFilterMusic"></CheckBox>
+
     </Grid>
 </Window>

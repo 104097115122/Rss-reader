@@ -143,5 +143,35 @@ namespace RssReader
             linkTextBox.FontStyle = FontStyles.Italic;
             linkTextBox.Text = "Enter a link!";
         }
+
+        private void AddFilterWorld(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void AddFilterFood(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void AddFilterSport(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void AddFilterWeather(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void AddFilterMusic(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void ResetFilters(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
