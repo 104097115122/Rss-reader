@@ -144,34 +144,48 @@ namespace RssReader
             linkTextBox.Text = "Enter a link!";
         }
 
-        private void AddFilterWorld(object sender, RoutedEventArgs e)
+        private void AddFilter(object sender, RoutedEventArgs e)
         {
-
-        }
-
-        private void AddFilterFood(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void AddFilterSport(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void AddFilterWeather(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void AddFilterMusic(object sender, RoutedEventArgs e)
-        {
-
+            if (worldCheckbox.IsChecked == true)
+            {
+                // add filter 
+            }
+            else { 
+                // delete filter
+            }
+            if (sportCheckbox.IsChecked == true)
+            {
+                // add filter
+            }
+            else { 
+                // delete filter
+            }
+            if (weatherCheckbox.IsChecked == true)
+            {
+                // add filter
+            }
+            else { 
+                // delete filter
+            }
+            if (foodCheckbox.IsChecked == true)
+            {
+                // add filter
+            }
+            else {
+                // delete filter
+            }
+            if (musicCheckbox.IsChecked == true)
+            {
+                // add filter
+            }
+            else { 
+                // delete filter
+            }
         }
 
         private void ResetFilters(object sender, RoutedEventArgs e)
         {
-
+            // delete all filters, show all links instead
         }
     }
 }

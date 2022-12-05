@@ -29,11 +29,11 @@
         <Button Content="Save a link!" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" Height="20" Width="100" Margin="310,50,0,0" Click="ButtonClicked"></Button>
         <Button Content="Reset filters" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" Height="20" Width="100" Margin="70,50,0,0" Click="ResetFilters"></Button>
         <ListBox Grid.Column="1" Grid.Row="2" Grid.RowSpan="2" Width="410" Grid.ColumnSpan="2" x:Name="linkList"></ListBox>
-        <CheckBox Grid.Row="2" Grid.RowSpan="2" Height="20" Width="80" Margin="10,0,0,150" Content="Świat" x:Name="worldCheckbox" Checked="AddFilterWorld"></CheckBox>
-        <CheckBox Grid.Row="2" Grid.RowSpan="2" Height="20" Width="80" Margin="10,0,0,110" Content="Jedzenie" x:Name="foodCheckbox" Checked="AddFilterFood"></CheckBox>
-        <CheckBox Grid.Row="2" Grid.RowSpan="2" Height="20" Width="80" Margin="10,0,0,70" Content="Sport" x:Name="sportCheckbox" Checked="AddFilterSport"></CheckBox>
-        <CheckBox Grid.Row="2" Grid.RowSpan="2" Height="20" Width="80" Margin="10,0,0,30" Content="Pogoda" x:Name="weatherCheckbox" Checked="AddFilterWeather"></CheckBox>
-        <CheckBox Grid.Row="2" Grid.RowSpan="2" Height="20" Width="80" Margin="10,10,0,0" Content="Muzyka" x:Name="musicCheckbox" Checked="AddFilterMusic"></CheckBox>
+        <CheckBox Grid.Row="2" Grid.RowSpan="2" Height="20" Width="80" Margin="10,0,0,150" Content="Świat" x:Name="worldCheckbox" Checked="AddFilter" Unchecked="AddFilter"></CheckBox>
+        <CheckBox Grid.Row="2" Grid.RowSpan="2" Height="20" Width="80" Margin="10,0,0,110" Content="Jedzenie" x:Name="foodCheckbox" Checked="AddFilter" Unchecked="AddFilter"></CheckBox>
+        <CheckBox Grid.Row="2" Grid.RowSpan="2" Height="20" Width="80" Margin="10,0,0,70" Content="Sport" x:Name="sportCheckbox" Checked="AddFilter" Unchecked="AddFilter"></CheckBox>
+        <CheckBox Grid.Row="2" Grid.RowSpan="2" Height="20" Width="80" Margin="10,0,0,30" Content="Pogoda" x:Name="weatherCheckbox" Checked="AddFilter" Unchecked="AddFilter"></CheckBox>
+        <CheckBox Grid.Row="2" Grid.RowSpan="2" Height="20" Width="80" Margin="10,10,0,0" Content="Muzyka" x:Name="musicCheckbox" Checked="AddFilter" Unchecked="AddFilter"></CheckBox>
 
     </Grid>
 </Window>
