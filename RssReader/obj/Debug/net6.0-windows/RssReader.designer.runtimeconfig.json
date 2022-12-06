@@ -12,14 +12,8 @@
       }
     ],
     "additionalProbingPaths": [
-<<<<<<< HEAD
       "C:\\Users\\igora\\.dotnet\\store\\|arch|\\|tfm|",
       "C:\\Users\\igora\\.nuget\\packages"
-=======
-      "C:\\Users\\sgugn\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\sgugn\\.nuget\\packages",
-      "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
->>>>>>> origin
     ],
     "configProperties": {
       "Microsoft.NETCore.DotNetHostPolicy.SetAppPaths": true
