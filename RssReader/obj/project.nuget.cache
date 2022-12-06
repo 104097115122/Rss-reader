@@ -1,10 +1,14 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "PSjSxo1Qn5h/7mdvXGgAeX6YA6IYeEQ5ORNlBxKuw/iE/i5mS9NRofS3TzKpQT90lyG84fPs3QKciPZY/jscrg==",
+=======
+  "dgSpecHash": "uODoihQJ9gsDe8ttRNp4RfldtcQzKvWJau/K5KukMBSKOoZ0ZZ3KCYdjWFUWMsch9Uf5FD0XilvkDL+1MzItzQ==",
+>>>>>>> origin
   "success": true,
-  "projectFilePath": "E:\\reps\\RssReader\\RssReader.csproj",
+  "projectFilePath": "D:\\ProjektWPF\\Rss-reader\\RssReader\\RssReader.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\igora\\.nuget\\packages\\system.servicemodel.syndication\\7.0.0\\system.servicemodel.syndication.7.0.0.nupkg.sha512"
+    "C:\\Users\\sgugn\\.nuget\\packages\\system.servicemodel.syndication\\7.0.0\\system.servicemodel.syndication.7.0.0.nupkg.sha512"
   ],
   "logs": []
 }
