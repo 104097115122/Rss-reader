@@ -8,7 +8,19 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="backgroundImage.jpg" />
+    <None Remove="backgroundImage2.jpg" />
+    <None Remove="backgroundImage3.jpg" />
+    <None Remove="wifi.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="System.ServiceModel.Syndication" Version="7.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="backgroundImage3.jpg" />
+    <Resource Include="wifi.jpg" />
   </ItemGroup>
 
 </Project>

@@ -55,8 +55,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\igora\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Users\\igora\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
@@ -67,9 +66,6 @@
       "packagesPath": "C:\\Users\\igora\\.nuget\\packages\\",
       "outputPath": "E:\\reps\\RssReader\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
-      ],
       "configFilePaths": [
         "C:\\Users\\igora\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
